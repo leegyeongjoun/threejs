@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./02_geometry.css" />
+		<script type="importmap">
+			{
+				"imports": {
+					"three": "../build/three.module.js"
+				}
+			}
+		</script>
+		<script type="module" src="./02_geometry.js" defer></script>
+		<!-- 스타일 파일과 자바스크립트 파일인데 자바스크립트는 모듈 파일로 추가된 이유는 자바스크립트에서 three.js 라이브러리를 모듈 버전으로 import하기 위해 defer 이 페이지가 모두 로딩 된 이후에 자바스크립트가 실행된다. -->
+	</head>
+	<body>
+		<!-- webgl-caontainer인 div요소에 three.js 라이브러리에 api를 이용해서 삼차원 그래픽을 시각화 할 수있는 캠퍼스 요소가 추가된다. -->
+		<div id="webgl-container"></div>
+	</body>
+</html>
